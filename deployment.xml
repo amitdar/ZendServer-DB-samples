@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<package xmlns="http://www.zend.com/server/deployment-descriptor/1.0" version="1.0">
+    <name>DB-samples</name>
+    <summary>ZendServer DB Samples</summary>
+    <description></description>
+    <version>
+        <release>1.0</release>
+    </version>
+    <icon>data/logo.png</icon>
+    <appdir>data</appdir>
+    <scriptsdir>hook_scripts</scriptsdir>
+    <dependencies>
+        <required>
+            <php>
+                <min>5.3</min>
+            </php>
+        </required>
+    </dependencies>
+    <parameters>
+        <parameter display="Database host" id="db_host" readonly="false" required="true" type="string">
+            <defaultvalue>localhost</defaultvalue>
+        </parameter>
+        <parameter display="Database username" id="db_username" readonly="false" required="true" type="string">
+            <defaultvalue>root</defaultvalue>
+        </parameter>
+        <parameter display="Database password" id="db_password" readonly="false" required="true" type="password" />
+        <parameter display="Database name" id="db_name" readonly="false" required="true" type="string">
+			<defaultvalue>db</defaultvalue>
+		</parameter>
+    </parameters>
+</package>
